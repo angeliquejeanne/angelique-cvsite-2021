@@ -1,0 +1,545 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: var(--color-third);
+  text-decoration: none;
+}
+
+.clearfix::after, .clearfix::before {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+:root {
+  --color-primary: rgb(103, 4, 112);
+  --color-second: rgb(228, 175, 0);
+  --color-third: rgb(60, 255, 0);
+  --color-four: #000;
+  --color-bg: #fff;
+}
+
+.resume-wrapper {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100% !important;
+}
+
+.resume-wrapper .profile {
+  width: 40%;
+  height: 100%;
+  float: left;
+  color: var(--color-bg);
+}
+
+.resume-wrapper .profile .container {
+  min-height: 600px;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.resume-wrapper .profile .container .picture-resume-wrapper {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.resume-wrapper .profile .container .picture-resume-wrapper .picture-resume {
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 0px;
+  display: table;
+  position: relative;
+  vertical-align: middle;
+}
+
+.resume-wrapper .profile .container .picture-resume-wrapper .picture-resume span {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+  text-align: center;
+}
+
+.resume-wrapper .profile .container .picture-resume-wrapper .picture-resume span img {
+  border-radius: 999px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--color-primary);
+}
+
+.resume-wrapper .profile .container .picture-resume-wrapper h1 {
+  font-size: 2.5em;
+  font-family: 'Varela Round', sans-serif;
+  color: var(--color-third);
+  text-transform: uppercase;
+  line-height: 1em;
+  padding-top: 40px;
+}
+
+.resume-wrapper .profile .container .contact-info {
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.resume-wrapper .profile .container .contact-info .list-titles {
+  float: left;
+  text-align: left;
+  font-weight: 600;
+  width: 40%;
+  color: var(--color-third);
+}
+
+.resume-wrapper .profile .container .contact-info .list-titles li {
+  margin-bottom: 10px;
+}
+
+.resume-wrapper .profile .container .contact-info .list-content {
+  float: left;
+  width: 60%;
+  text-align: left;
+  font-weight: 300;
+}
+
+.resume-wrapper .profile .container .contact-info .list-content li {
+  margin-bottom: 10px;
+}
+
+.resume-wrapper .profile .container .contact-presentation {
+  text-align: left;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.resume-wrapper .profile .container .contact-presentation p .bold {
+  color: var(--color-third);
+  font-weight: 400;
+}
+
+.resume-wrapper .profile .container .content-social {
+  margin: 50px 0px 0px -20px;
+  max-width: 300px;
+}
+
+.resume-wrapper .profile .container .content-social .list-content {
+  width: 100%;
+  text-align: left;
+}
+
+.resume-wrapper .profile .container .content-social .list-content li {
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.resume-wrapper .experience {
+  background: var(--color-primary);
+  width: 60%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: var(--color-bg);
+  font-weight: 300;
+}
+
+.resume-wrapper .experience .container {
+  min-height: 600px;
+}
+
+.resume-wrapper .experience .container h3.experience-title {
+  color: var(--color-second);
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.resume-wrapper .experience .container .experience-wrapper .company-wrapper {
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 10px;
+}
+
+.resume-wrapper .experience .container .experience-wrapper .company-wrapper .experience-title {
+  color: var(--color-second);
+  margin-bottom: 15px;
+}
+
+.resume-wrapper .experience .container .experience-wrapper .job-wrapper {
+  width: 70%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 10px;
+}
+
+.resume-wrapper .experience .container .experience-wrapper .job-wrapper .experience-title {
+  color: var(--color-second);
+  margin-bottom: 15px;
+}
+
+.resume-wrapper .experience .container .section-wrapper {
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: var(--color-bg);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.resume-wrapper .experience .container .section-wrapper:nth-child(3) {
+  padding-right: 20px;
+}
+
+.resume-wrapper .experience .container .section-wrapper h3.section-title {
+  color: var(--color-second);
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: var(--color-third);
+  display: block;
+  margin-top: 3px;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage::before {
+  content: "";
+  height: 6px;
+  background: var(--color-second);
+  position: absolute;
+  margin-top: 3px;
+  bottom: 0;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(1)::before {
+  width: 95%;
+  -webkit-animation: skill_1 0.6s ease;
+          animation: skill_1 0.6s ease;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(2)::before {
+  width: 90%;
+  -webkit-animation: skill_2 0.6s ease;
+          animation: skill_2 0.6s ease;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(3)::before {
+  width: 85%;
+  -webkit-animation: skill_3 0.6s ease;
+          animation: skill_3 0.6s ease;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(4)::before {
+  width: 70%;
+  -webkit-animation: skill_4 0.6s ease;
+          animation: skill_4 0.6s ease;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(5)::before {
+  width: 60%;
+  -webkit-animation: skill_5 0.6s ease;
+          animation: skill_5 0.6s ease;
+}
+
+.resume-wrapper .experience .container .section-wrapper .skill-percentage:nth-child(6)::before {
+  width: 70%;
+  -webkit-animation: skill_6 0.6s ease;
+          animation: skill_6 0.6s ease;
+}
+
+.resume-wrapper .section-padding {
+  padding: 30px 60px 40px 40px;
+}
+
+@-webkit-keyframes skill_1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes skill_1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes skill_2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes skill_2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes skill_3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes skill_3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes skill_4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes skill_4 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes skill_5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes skill_5 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes skill_6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes skill_6 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes skill_7 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes skill_7 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    overflow: visible;
+  }
+  body .resume-wrapper .profile .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .resume-wrapper .profile .container .contact-info .list-titles {
+    display: none;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1200px) {
+  .resume .profile .container .picture-resume-wrapper {
+    width: 100%;
+  }
+  .resume .profile .container .picture-resume-wrapper .picture-resume img {
+    width: 120px;
+    height: 120px;
+  }
+  .resume .profile .container .contact-info .list-titles {
+    display: none;
+  }
+  .resume .profile .contact-presentation {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .resume-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .resume-wrapper .profile {
+    width: 100%;
+  }
+  .resume-wrapper .profile .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .resume-wrapper .profile .container .picture-resume-wrapper {
+    width: 100%;
+  }
+  .resume-wrapper .profile .container .picture-resume-wrapper .picture-resume {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px auto;
+  }
+  .resume-wrapper .profile .container .picture-resume-wrapper .picture-resume img {
+    width: 80px;
+    height: 80px;
+  }
+  .resume-wrapper .profile .container .picture-resume-wrapper .picture-resume h1 {
+    margin: 0px auto;
+    font-size: 1.8em;
+    padding-top: 20px;
+  }
+  .resume-wrapper .profile .container .contact-info {
+    margin: 50px 0px 0px -20px;
+    max-width: 300px;
+  }
+  .resume-wrapper .profile .container .contact-info .list-titles {
+    display: none;
+  }
+  .resume-wrapper .profile .container .contact-info .list-content {
+    width: 60%;
+  }
+  .resume-wrapper .profile .container .contact-info .list-content li {
+    font-size: 1rem;
+    list-style-type: none;
+  }
+  .resume-wrapper .profile .container .contact-presentation {
+    margin: 25px auto;
+  }
+  .resume-wrapper .profile .container .contact-social {
+    margin: 50px 0px 0px -20px;
+    max-width: 300px;
+  }
+  .resume-wrapper .profile .container .contact-social .list-content {
+    width: 100%;
+    text-align: left;
+  }
+  .resume-wrapper .profile .container .contact-social .list-content li {
+    font-size: 1rem;
+    list-style-type: none;
+  }
+  .resume-wrapper .experience {
+    width: 100%;
+  }
+  .resume-wrapper .experience .container .experience-wrapper .company-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .resume-wrapper .experience .container .experience-wrapper .job-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .resume-wrapper .experience .container .section-wrapper {
+    width: 100%;
+  }
+  .resume-wrapper .section-padding {
+    padding: 40px 10% 20px 5%;
+  }
+}
+
+@media screen {
+  .contact-social {
+    margin: 50px 0px 0px -20px;
+    max-width: 300px;
+  }
+  .contact-social .list-content {
+    width: 100%;
+    text-align: left;
+  }
+  .contact-social .list-content li {
+    font-size: 1rem;
+    list-style-type: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

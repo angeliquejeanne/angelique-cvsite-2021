@@ -1,0 +1,30 @@
+// FONTS
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+*, ::after, ::before {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    line-height:1.5em;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    color: var(--color-third); 
+    text-decoration:none;
+}
+
+.clearfix::after, .clearfix::before {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear:both;
+}

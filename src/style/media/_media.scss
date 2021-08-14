@@ -1,0 +1,148 @@
+@media screen and (max-width: 1280px) {
+    body {
+        overflow: visible;
+        .resume-wrapper {
+        
+            .profile {
+                .container {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    .contact-info {
+                        .list-titles {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 961px) and (max-width: 1200px) { 
+    .resume {
+        .profile {
+            .container {
+                .picture-resume-wrapper {
+                    width: 100%;
+                    .picture-resume {
+                        img {
+                            width:120px;
+                            height:120px;
+                        }
+                    }
+                }
+                .contact-info {
+                    .list-titles {
+                        display: none;
+                    }
+                }
+            }
+            
+            .contact-presentation {
+                margin: 50px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) { 
+
+    .resume-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        
+        .profile {
+            width: 100%;
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .picture-resume-wrapper {
+                    width: 100%;
+                    .picture-resume {
+                        justify-content: center;
+                        margin: 0px auto;
+                        img {
+                            width:80px;
+                            height:80px;
+                        }
+                        h1 {
+                            margin: 0px auto;
+                            font-size:1.8em;
+                            padding-top:20px;
+                        }
+                    }
+                }
+                .contact-info {
+                    margin: 50px 0px 0px -20px;
+                    max-width: 300px;
+                    .list-titles {
+                        display: none;
+                    }
+                    .list-content {
+                        width: 60%;
+                        li {
+                            font-size: 1rem;
+                            list-style-type: none;
+                        }
+                    }
+                }
+                .contact-presentation {
+                    margin: 25px auto;
+                }
+                .contact-social {
+                    margin: 50px 0px 0px -20px;
+                    max-width: 300px;
+                    .list-content {
+                        width: 100%;
+                        text-align: left;
+                        li {
+                            font-size: 1rem;
+                            list-style-type: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .experience {
+            width: 100%;
+            .container {
+                .experience-wrapper {
+                    .company-wrapper {
+                        width:100%; 
+                        margin-bottom:20px;
+                    }
+                    .job-wrapper {
+                        width:100%;
+                        margin-bottom:40px;
+                    }
+                }
+                .section-wrapper {
+                    width:100%;
+                }
+            }
+        }
+        .section-padding { 
+            padding: 40px 10% 20px 5%; 
+        }
+    }
+}
+
+@media screen {
+    .contact-social {
+        margin: 50px 0px 0px -20px;
+        max-width: 300px;
+        .list-content {
+            width: 100%;
+            text-align: left;
+            li {
+                font-size: 1rem;
+                list-style-type: none;
+            }
+        }
+    }
+}
